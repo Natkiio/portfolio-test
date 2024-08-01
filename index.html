@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li> <a href ="#education"> Education </a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me 🙋🏻‍♂️</h2>
+        <p>Hello! I'm Nathan, a Front End and Video Game Developer.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects 🧑🏻‍💻</h2>
+        <div class="project">
+            <h3>Labrinth of the Macabre 🧛🏻</h3>
+            <p> The project I developed for my final year of my BA in Digital Humanites and Information Technoloy in UCC. </p>
+
+            <p> The project aims to explore the tropes of Gothic literature and transpose these elements into a new medium, analysing the potential for a successful adaptation. </p> 
+            
+            <p> It was made using Unreal Engine 5, C++ and Unreal Engine's Blueprints scripting language.</p>
+            <a href="https://youtu.be/yos7b3VBnXo?si=xs_dhzhgOcGU8NPZ"> <em> Link to video of the project </em> </a>
+
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p> Placeholder.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education 🧑🏼‍🎓</h2>
+        <div>
+            <h3>4-year Degree in Digital Humanities and Information Technology</h3>
+            <p>University College Cork (UCC), Ireland</p>
+            <p>I have completed a comprehensive 4-year degree in Digital Humanities and Information Technology at University College Cork (UCC) in Ireland. This program provided me with a strong foundation in both the technical and humanistic aspects of digital technologies, covering areas such as digital content creation, data analysis, and web development.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

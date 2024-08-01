@@ -1,0 +1,228 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f4f8; /* Light blue-grey background */
+    color: #333; /* Dark text for readability */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #0288d1, #00bcd4); /* Gradient background */
+    color: #ffffff; /* White text */
+    padding: 60px 20px; /* Increased padding for more space */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    font-family: 'Lobster', cursive; /* Decorative header font */
+    position: relative; /* Position relative for absolute positioning of subtitle */
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 30%, transparent);
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    pointer-events: none;
+    animation: pulsate 3s infinite;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 6em; /* Larger font size */
+    line-height: 1.2; /* Adjust line height for better spacing */
+    animation: titleFadeIn 2s ease-out;
+}
+
+header h2 {
+    margin-top: 20px; /* Space between title and subtitle */
+    font-size: 1.8em; /* Slightly larger subtitle size */
+    font-weight: normal;
+    color: #ffffff; /* White subtitle for contrast */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0277bd; /* Slightly darker blue for hover effect */
+    transform: scale(1.1);
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* More prominent shadow for modern look */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Heading Animation */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    color: #0288d1; /* Light blue headings for accent */
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* About Section */
+#about p {
+    line-height: 1.6;
+    text-align: justify;
+    opacity: 0;
+    animation: fadeInUp 1s 0.5s forwards;
+}
+
+/* Education Section */
+#education h3 {
+    color: #01579b; /* Slightly darker blue for education titles */
+    animation: fadeInUp 1s 0.5s forwards;
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s 0.5s forwards;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #01579b; /* Slightly darker blue for project titles */
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeIn 1s 0.5s forwards;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for form elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0288d1; /* Focus effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    padding: 15px 20px;
+    background-color: #01579b; /* Slightly darker blue for button */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #039be5; /* Lighter shade for hover effect */
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0288d1; /* Light blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
