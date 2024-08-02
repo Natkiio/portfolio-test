@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
@@ -7,3 +6,4 @@ document.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
